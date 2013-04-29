@@ -1,0 +1,5 @@
+####<May 3, 2012 10:36:24 AM PDT> <Notice> <Security> <abhishek-593786> <myserver> <main> <<WLS Kernel>> <> <BEA-090082> <Security initializing using security realm myrealm.> 
+####<May 3, 2012 10:36:24 AM PDT> <Notice> <WebLogicServer> <abhishek-593786> <myserver> <main> <<WLS Kernel>> <> <BEA-000327> <Starting WebLogic Admin Server "myserver" for domain "mydomain"> 
+####<May 3, 2012 10:36:30 AM PDT> <Notice> <WebLogicServer> <abhishek-593786> <myserver> <ListenThread.Default> <<WLS Kernel>> <> <BEA-000355> <Thread "ListenThread.Default" listening on port 7001, ip address *.*> 
+####<May 3, 2012 10:36:30 AM PDT> <Notice> <WebLogicServer> <abhishek-593786> <myserver> <main> <<WLS Kernel>> <> <BEA-000360> <Server started in RUNNING mode> 
+####<May 3, 2012 10:41:37 AM PDT> <Notice> <Security> <abhishek-593786> <myserver> <ExecuteThread: '1' for queue: 'weblogic.admin.HTTP'> <<WLS Kernel>> <> <BEA-090078> <User abhishek123 in security realm myrealm has had 5 invalid login attempts, locking account for 30 minutes.> 

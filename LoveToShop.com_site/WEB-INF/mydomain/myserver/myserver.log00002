@@ -1,0 +1,43 @@
+####<Apr 30, 2012 10:10:42 AM PDT> <Notice> <Log Management> <abhishek-593786> <myserver> <main> <<WLS Kernel>> <> <BEA-170019> <The server log file D:\LoveToShop.com Codes sumit\LoveToShop.com\LoveToShop.com_site\WEB-INF\mydomain\myserver\myserver.log is opened. All server side log events will be written to this file.> 
+####<Apr 30, 2012 10:10:42 AM PDT> <Info> <Security> <abhishek-593786> <myserver> <main> <<WLS Kernel>> <> <BEA-090149> <The server security configuration has been loaded from C:\bea\weblogic81\server\lib\SecurityDefaultConfig.xml> 
+####<Apr 30, 2012 10:10:43 AM PDT> <Info> <Security> <abhishek-593786> <myserver> <main> <<WLS Kernel>> <> <BEA-090516> <The RoleMapper provider has preexisting LDAP data.> 
+####<Apr 30, 2012 10:10:43 AM PDT> <Info> <Security> <abhishek-593786> <myserver> <main> <<WLS Kernel>> <> <BEA-090516> <The Authorizer provider has preexisting LDAP data.> 
+####<Apr 30, 2012 10:10:43 AM PDT> <Info> <Security> <abhishek-593786> <myserver> <main> <<WLS Kernel>> <> <BEA-090516> <The Authenticator provider has preexisting LDAP data.> 
+####<Apr 30, 2012 10:10:43 AM PDT> <Info> <Security> <abhishek-593786> <myserver> <main> <<WLS Kernel>> <> <BEA-090093> <No pre-WLS 8.1 Keystore providers are configured for server myserver for security realm myrealm.> 
+####<Apr 30, 2012 10:10:43 AM PDT> <Notice> <Security> <abhishek-593786> <myserver> <main> <<WLS Kernel>> <> <BEA-090082> <Security initializing using security realm myrealm.> 
+####<Apr 30, 2012 10:10:43 AM PDT> <Notice> <WebLogicServer> <abhishek-593786> <myserver> <main> <<WLS Kernel>> <> <BEA-000327> <Starting WebLogic Admin Server "myserver" for domain "mydomain"> 
+####<Apr 30, 2012 10:10:43 AM PDT> <Info> <WebLogicServer> <abhishek-593786> <myserver> <main> <<WLS Kernel>> <> <BEA-000214> <WebLogic Server "myserver" version:
+WebLogic Server 8.1 SP4  Mon Nov 29 16:21:29 PST 2004 471647 
+WebLogic XMLX Module 8.1 SP4  Mon Nov 29 16:21:29 PST 2004 471647  (c) 1995, 1996, 1997, 1998 WebLogic, Inc.
+ (c) 1999, 2000, 2001 BEA Systems, Inc.> 
+####<Apr 30, 2012 10:10:43 AM PDT> <Info> <WebLogicServer> <abhishek-593786> <myserver> <main> <<WLS Kernel>> <> <BEA-000215> <Loaded License : C:\bea\license.bea> 
+####<Apr 30, 2012 10:10:43 AM PDT> <Info> <RJVM> <abhishek-593786> <myserver> <main> <<WLS Kernel>> <> <BEA-000570> <Network Configuration for Channel "myserver"
+ Listen Address		 *
+ Public Address		 N/A
+ Http Enabled		 true
+ Tunneling Enabled	 false
+ Outbound Enabled	 false
+ Admin Traffic Enabled	 true> 
+####<Apr 30, 2012 10:10:43 AM PDT> <Debug> <RJVM> <abhishek-593786> <myserver> <main> <<WLS Kernel>> <> <BEA-000571> <Network Configuration Detail for Channel "myserver"
+ Channel Weight		 50
+ Accept Backlog		 50
+ Login Timeout		 5000ms
+ Max Message Size	 10000000
+ Message Timeout	 60s
+ Idle Timeout		 65s
+ Tunneling Timeout	 40s
+ Tunneling Ping		 45s> 
+####<Apr 30, 2012 10:10:43 AM PDT> <Info> <XML> <abhishek-593786> <myserver> <main> <<WLS Kernel>> <> <BEA-130036> <Initializing XMLRegistry.> 
+####<Apr 30, 2012 10:10:43 AM PDT> <Info> <JDBC> <abhishek-593786> <myserver> <main> <<WLS Kernel>> <> <BEA-001135> <Initializing the JDBC service.> 
+####<Apr 30, 2012 10:10:43 AM PDT> <Info> <JDBC> <abhishek-593786> <myserver> <main> <<WLS Kernel>> <> <BEA-001137> <Initialization complete.> 
+####<Apr 30, 2012 10:10:43 AM PDT> <Info> <Connector> <abhishek-593786> <myserver> <main> <<WLS Kernel>> <> <BEA-190000> <Initializing J2EE Connector Service> 
+####<Apr 30, 2012 10:10:43 AM PDT> <Info> <Connector> <abhishek-593786> <myserver> <main> <<WLS Kernel>> <> <BEA-190001> <J2EE Connector Service initialized successfully> 
+####<Apr 30, 2012 10:10:43 AM PDT> <Info> <IIOP> <abhishek-593786> <myserver> <main> <<WLS Kernel>> <> <BEA-002014> <IIOP subsystem enabled.> 
+####<Apr 30, 2012 10:10:43 AM PDT> <Info> <JMS> <abhishek-593786> <myserver> <main> <<WLS Kernel>> <> <BEA-040090> <Deployed 5 default connection factories.> 
+####<Apr 30, 2012 10:10:43 AM PDT> <Info> <JMS> <abhishek-593786> <myserver> <main> <<WLS Kernel>> <> <BEA-040305> <JMS service is initialized and in standby mode.> 
+####<Apr 30, 2012 10:10:43 AM PDT> <Info> <HTTP> <abhishek-593786> <myserver> <main> <<WLS Kernel>> <> <BEA-101128> <Initializing HTTP services.> 
+####<Apr 30, 2012 10:10:43 AM PDT> <Info> <HTTP> <abhishek-593786> <myserver> <main> <<WLS Kernel>> <> <BEA-101133> <Initializing Web server myserver.> 
+####<Apr 30, 2012 10:10:44 AM PDT> <Info> <HTTP> <abhishek-593786> <myserver> <main> <<WLS Kernel>> <> <BEA-101052> <[HTTP myserver] Initialized> 
+####<Apr 30, 2012 10:10:44 AM PDT> <Info> <HTTP> <abhishek-593786> <myserver> <main> <<WLS Kernel>> <> <BEA-101135> <myserver is the default Web server.> 
+####<Apr 30, 2012 10:10:44 AM PDT> <Info> <J2EE> <abhishek-593786> <myserver> <main> <<WLS Kernel>> <> <BEA-160037> <J2EE service initializing.> 
+####<Apr 30, 2012 10:10:44 AM PDT> <Info> <Deployer> <abhishek-593786> <myserver> <main> <<WLS Kernel>> <> <BEA-149207> <Initializing.> 

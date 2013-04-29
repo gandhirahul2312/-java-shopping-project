@@ -1,0 +1,49 @@
+<web-app>
+   <servlet>
+    <servlet-name>ControllerServlet</servlet-name>
+    <servlet-class>ControllerServlet</servlet-class>
+     <load-on-startup>0</load-on-startup>
+    <init-param>
+      <param-name>base</param-name>
+      <param-value>http://localhost:8080/emart/servlet/ControllerServlet</param-value>
+    </init-param>
+    <init-param>
+      <param-name>jdbcDriver</param-name>
+      <param-value>sun.jdbc.odbc.JdbcOdbcDriver</param-value>
+    </init-param>
+    <init-param>
+      <param-name>imageUrl</param-name>
+      <param-value>http://localhost:8080/emart/images/</param-value>
+    </init-param>
+    <init-param>
+      <param-name>dbUrl</param-name>
+      <param-value>jdbc:odbc:emart</param-value>
+    </init-param>
+    <init-param>
+      <param-name>dbUserName</param-name>
+      <param-value></param-value>
+    </init-param>
+    <init-param>
+      <param-name>dbPassword</param-name>
+      <param-value></param-value>
+    </init-param>
+  </servlet>
+
+<servlet-mapping>
+	<servlet-name>ControllerServlet</servlet-name>
+	<url-pattern>/servlet/ControllerServlet</url-pattern>
+</servlet-mapping>
+
+
+
+<servlet>
+    <servlet-name>myser</servlet-name>
+    <servlet-class>myser</servlet-class>
+</servlet>
+
+<servlet-mapping>
+	<servlet-name>myser</servlet-name>
+	<url-pattern>/myser</url-pattern>
+</servlet-mapping>
+
+</web-app>

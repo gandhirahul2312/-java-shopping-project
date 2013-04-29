@@ -1,0 +1,6 @@
+####<Apr 30, 2012 9:42:41 AM PDT> <Notice> <Security> <abhishek-593786> <myserver> <main> <<WLS Kernel>> <> <BEA-090082> <Security initializing using security realm myrealm.> 
+####<Apr 30, 2012 9:42:41 AM PDT> <Notice> <WebLogicServer> <abhishek-593786> <myserver> <main> <<WLS Kernel>> <> <BEA-000327> <Starting WebLogic Admin Server "myserver" for domain "mydomain"> 
+####<Apr 30, 2012 9:42:46 AM PDT> <Notice> <JTA> <abhishek-593786> <myserver> <main> <<WLS Kernel>> <> <BEA-110025> <Creating new transaction log file [.\myserver\./myserver.heur.0000.tlog].> 
+####<Apr 30, 2012 9:42:46 AM PDT> <Notice> <JTA> <abhishek-593786> <myserver> <main> <<WLS Kernel>> <> <BEA-110025> <Creating new transaction log file [.\myserver\./myserver.0000.tlog].> 
+####<Apr 30, 2012 9:42:47 AM PDT> <Notice> <WebLogicServer> <abhishek-593786> <myserver> <main> <<WLS Kernel>> <> <BEA-000360> <Server started in RUNNING mode> 
+####<Apr 30, 2012 9:42:47 AM PDT> <Notice> <WebLogicServer> <abhishek-593786> <myserver> <ListenThread.Default> <<WLS Kernel>> <> <BEA-000355> <Thread "ListenThread.Default" listening on port 7001, ip address *.*> 

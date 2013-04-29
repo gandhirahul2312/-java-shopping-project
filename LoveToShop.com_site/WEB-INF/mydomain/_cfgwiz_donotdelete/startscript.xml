@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<scripts>
+	<script name="startWebLogic" version="3">
+		<comment>
+			<value>*************************************************************************</value>
+			<value>This script is used to start WebLogic Server for the domain in the</value>
+			<value>current working directory.  This script simply sets the SERVER_NAME</value>
+			<value>variable and starts server.</value>
+			<value></value>
+			<value>To create your own start script for your domain, all you need to set is</value>
+			<value>SERVER_NAME, then starts the server.</value>
+			<value></value>
+			<value>Other variables that startWLS takes are:</value>
+			<value></value>
+			<value>WLS_USER     - cleartext user for server startup</value>
+			<value>WLS_PW       - cleartext password for server startup</value>
+			<value>PRODUCTION_MODE    - true for production mode servers, false for</value>
+			<value>               development mode</value>
+			<value>JAVA_OPTIONS - Java command-line options for running the server. (These</value>
+			<value>               will be tagged on to the end of the JAVA_VM and MEM_ARGS)</value>
+			<value>JAVA_VM      - The java arg specifying the VM to run.  (i.e. -server,</value>
+			<value>               -hotspot, etc.)</value>
+			<value>MEM_ARGS     - The variable to override the standard memory arguments</value>
+			<value>               passed to java</value>
+			<value></value>
+			<value>For additional information, refer to the WebLogic Server Administration</value>
+			<value>Console Online Help(http://e-docs.bea.com/wls/docs81/ConsoleHelp/startstop.html)</value>
+			<value>*************************************************************************</value>
+		</comment>
+		<comment message="Initialize the common environment."/>
+		<setenv name="WL_HOME" shorten="true">
+			<value>C:\bea\weblogic81</value>
+		</setenv>
+		<setenv name="PRODUCTION_MODE">
+			<value></value>
+		</setenv>
+		<setenv name="JAVA_VENDOR">
+			<value>Sun</value>
+		</setenv>
+		<setenv name="JAVA_HOME" shorten="true">
+			<value>C:\bea\jdk142_05</value>
+		</setenv>
+		<comment message="Call commEnv here AFTER setting the java_vendor to get common environmental settings."/>
+		<exec name="commEnv" type="script">
+			<cmd start="%WL_HOME%\common\bin\commEnv" min="false" source="true"/>
+		</exec>
+		<comment message="Set SERVER_NAME to the name of the server you wish to start up."/>
+		<setenv name="SERVER_NAME">
+			<value>myserver</value>
+		</setenv>
+		<marker name="PATH" type="setenv" action="merge"/>
+		<marker name="CLASSPATH" type="setenv" action="merge"/>
+		<setenv name="CLASSPATH" scope="global">
+			<value>%WEBLOGIC_CLASSPATH%</value>
+			<value>%POINTBASE_CLASSPATH%</value>
+			<value>%JAVA_HOME%\jre\lib\rt.jar</value>
+			<value>%WL_HOME%\server\lib\webservices.jar</value>
+			<value>%CLASSPATH%</value>
+		</setenv>
+		<marker name="WebLogic Workshop Debugger..." type="exec" action="replace"/>
+		<marker name="Pointbase" type="exec" action="replace"/>
+		<marker name="SearchEngine" type="exec" action="replace"/>
+		<comment message="Call WebLogic Server"/>
+		<echo>
+			<value>.</value>
+			<value>CLASSPATH=%CLASSPATH%</value>
+			<value>.</value>
+			<value>PATH=%PATH%</value>
+			<value>.</value>
+			<value>***************************************************</value>
+			<value>*  To start WebLogic Server, use a username and   *</value>
+			<value>*  password assigned to an admin-level user.  For *</value>
+			<value>*  server administration, use the WebLogic Server *</value>
+			<value>*  console at http://[hostname]:[port]/console    *</value>
+			<value>***************************************************</value>
+		</echo>
+		<marker name="startserver" type="exec" action="merge"/>
+		<exec name="startserver" type="program">
+			<cmd start="%JAVA_HOME%\bin\java" end="weblogic.Server" min="false"/>
+			<params>
+				<value>%JAVA_VM%</value>
+				<value>%MEM_ARGS%</value>
+				<value>%JAVA_OPTIONS%</value>
+				<value>-Dweblogic.Name=%SERVER_NAME%</value>
+				<value>-Dweblogic.ProductionModeEnabled=%PRODUCTION_MODE%</value>
+				<value>-Djava.security.policy="%WL_HOME%\server\lib\weblogic.policy"</value>
+			</params>
+		</exec>
+		<marker name="Stop SearchEngine" type="exec" action="replace"/>
+		<marker name="Shutdown WebLogic Workshop Debugger..." type="exec" action="replace"/>
+		<marker name="Stop Pointbase" type="exec" action="replace"/>
+	</script>
+	<script name="stopWebLogic" version="3" overwrite="false">
+		<comment>
+			<value>*************************************************************************</value>
+			<value>This script is used to stop WebLogic Server created by Config Wizard</value>
+			<value>Usage: stopWebLogic [username] [password] [server-name] [admin-url]</value>
+			<value>The default value of server-name is myserver</value>
+			<value>The default value of admin-url is t3://localhost:7001</value>
+			<value>For additional information, refer to the WebLogic Server Administration</value>
+			<value>Console Online Help(http://e-docs.bea.com/wls/docs81/ConsoleHelp/startstop.html)</value>
+			<value>*************************************************************************</value>
+		</comment>
+		<if>
+			<test type="string" not="true">
+				<operand value="%1"/>
+				<operand value=""/>
+			</test>
+			<then>
+				<setenv name="UIDPWD">
+					<value>-username %1</value>
+				</setenv>
+				<shift/>
+			</then>
+		</if>
+		<if>
+			<test type="string" not="true">
+				<operand value="%1"/>
+				<operand value=""/>
+			</test>
+			<then>
+				<setenv name="UIDPWD">
+					<value>%UIDPWD% -password %1</value>
+				</setenv>
+				<shift/>
+			</then>
+		</if>
+		<if>
+			<test type="string">
+				<operand value=""/>
+				<operand value="true"/>
+			</test>
+			<then>
+				<if>
+					<test type="string">
+						<operand value="%UIDPWD%"/>
+						<operand value=""/>
+					</test>
+					<then>
+						<echo message="ERROR: Because your domain was created as a production mode domain. "/>
+						<echo message="You MUST include a username parameter that can be used to shutdown Weblogic Server"/>
+						<pause/>
+						<exit/>
+					</then>
+				</if>
+			</then>
+		</if>
+		<comment message="set server name"/>
+		<setenv name="SERVER_NAME">
+			<value>myserver</value>
+		</setenv>
+		<if>
+			<test type="string" not="true">
+				<operand value="%1"/>
+				<operand value=""/>
+			</test>
+			<then>
+				<setenv name="SERVER_NAME">
+					<value>%1</value>
+				</setenv>
+				<shift/>
+			</then>
+		</if>
+		<if>
+			<test type="string">
+				<operand value="%SERVER_NAME%"/>
+				<operand value=""/>
+			</test>
+			<then>
+				<echo message="ERROR: Missing Server Name. "/>
+				<echo message="Usage: stopWebLogic.cmd(sh) [username] [password] [server-name] [admin-url]"/>
+				<pause/>
+				<exit/>
+			</then>
+		</if>
+		<comment message="set ADMIN_URL"/>
+		<if>
+			<test type="string" not="true">
+				<operand value="%1"/>
+				<operand value=""/>
+			</test>
+			<then>
+				<setenv name="ADMIN_URL">
+					<value>%1</value>
+				</setenv>
+				<shift/>
+			</then>
+			<else>
+				<if>
+					<test type="string">
+						<operand value="%ADMIN_URL%"/>
+						<operand value=""/>
+					</test>
+					<then>
+						<setenv name="ADMIN_URL">
+							<value preserve="true">t3://localhost:7001</value>
+						</setenv>
+					</then>
+				</if>
+			</else>
+		</if>
+		<comment message="Call commEnv here."/>
+		<exec name="commEnv" type="script">
+			<cmd start="C:\bea\weblogic81\common\bin\commEnv" min="false" source="true"/>
+		</exec>
+		<echo message="Stopping Weblogic Server..."/>
+		<exec name="Stop Weblogic Server..." type="program">
+			<cmd start="%JAVA_HOME%\bin\java" end="weblogic.Admin" min="false"/>
+			<params>
+				<value>-cp</value>
+				<value>%WEBLOGIC_CLASSPATH%</value>
+			</params>
+			<params type="post">
+				<value>FORCESHUTDOWN</value>
+				<value>-url %ADMIN_URL%</value>
+				<value>%UIDPWD%</value>
+				<value>%SERVER_NAME%</value>
+			</params>
+			<redirect tostream="1" fromstream="2"/>
+		</exec>
+		<echo message="Done"/>
+	</script>
+</scripts>

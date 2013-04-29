@@ -1,0 +1,90 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Untitled Document</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<script type="text/javascript">
+
+
+function initVar() {
+  displayTime = 5; // The amount of time each banner will be displayed in seconds.
+  speed = 10; // The speed at which the banners is moved (1 - 10, anything above 5 is not recommended).
+  wait = true;
+
+  banner1 = document.getElementById("banner1");
+  banner2 = document.getElementById("banner2");
+  link1 = document.getElementById("link1");
+  link2 = document.getElementById("link2");
+
+  banner1.style.left = 3;
+  banner2.style.left = 627;
+
+  bannerIndex = 1;
+
+  /* Important: In order for this script to work properly, please make sure that the banner graphic and the
+  URL associated with it have the same index in both, the bannerLocations and bannerURLs arrays.
+  Duplicate URLs are permitted. */
+
+  // Enter the location of the banner graphics in the array below.
+  bannerLocations = new Array("pic/usb1.jpg","pic/usb2.jpg","pic/usb3.jpg","pic/usb4.jpg","pic/usb5.jpg");
+
+  // Enter the URL's to which the banners will link to in the array below.
+  bannerURLs = new Array("pic/usb1.jpg","pic/usb2.jpg","pic/usb3.jpg","pic/usb4.jpg","pic/usb5.jpg"	);
+}
+
+function moveBanner(){		
+  if(!wait){
+    banner1.style.left = parseInt(banner1.style.left) -  (speed * 7);
+    banner2.style.left = parseInt(banner2.style.left) - (speed * 7);
+    if(parseInt(banner1.style.left) <= -627){
+      banner1.style.left = 627;
+      bannerIndex = (bannerIndex < (bannerLocations.length - 1)) ? ++bannerIndex :0;
+      banner1.src = bannerLocations[bannerIndex];
+      link1.href = bannerURLs[bannerIndex];
+      wait = true;
+    }
+    if(parseInt(banner2.style.left) <= -627){
+      banner2.style.left = 627;
+      bannerIndex = (bannerIndex < (bannerLocations.length - 1)) ? ++bannerIndex :0;
+      banner2.src = bannerLocations[bannerIndex];
+      link2.href = bannerURLs[bannerIndex];
+      wait = true;
+    }
+
+    setTimeout("moveBanner()",100);
+  } else {
+      wait = false;
+      setTimeout("moveBanner()", displayTime * 1000);
+  }
+}
+
+
+
+</script>
+
+
+<SCRIPT LANGUAGE="JavaScript">
+	var im=new Array();
+	im[0]="pic/usb1.jpg",
+	im[1]="pic/usb2.jpg"
+	function dd()
+	{
+	alert("dddd");
+	document.write("ff");
+	for(int i=0;i<2;i++)
+	{
+	var a=im[i];
+	document.write("<img src="+a+" >");
+	}
+	}
+	
+	</script>
+
+
+</head>
+
+<body >
+<marquee><img src="pic/pic1.jpg"><img src="pic/pic1.jpg"></marquee>
+</body>
+</html>

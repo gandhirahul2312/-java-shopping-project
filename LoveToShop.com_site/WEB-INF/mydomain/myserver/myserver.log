@@ -1,0 +1,176 @@
+####<May 3, 2012 10:36:23 AM PDT> <Notice> <Log Management> <abhishek-593786> <myserver> <main> <<WLS Kernel>> <> <BEA-170019> <The server log file D:\LoveToShop.com Codes sumit\LoveToShop.com\LoveToShop.com_site\WEB-INF\mydomain\myserver\myserver.log is opened. All server side log events will be written to this file.> 
+####<May 3, 2012 10:36:24 AM PDT> <Info> <Security> <abhishek-593786> <myserver> <main> <<WLS Kernel>> <> <BEA-090149> <The server security configuration has been loaded from C:\bea\weblogic81\server\lib\SecurityDefaultConfig.xml> 
+####<May 3, 2012 10:36:24 AM PDT> <Info> <Security> <abhishek-593786> <myserver> <main> <<WLS Kernel>> <> <BEA-090516> <The RoleMapper provider has preexisting LDAP data.> 
+####<May 3, 2012 10:36:24 AM PDT> <Info> <Security> <abhishek-593786> <myserver> <main> <<WLS Kernel>> <> <BEA-090516> <The Authorizer provider has preexisting LDAP data.> 
+####<May 3, 2012 10:36:24 AM PDT> <Info> <Security> <abhishek-593786> <myserver> <main> <<WLS Kernel>> <> <BEA-090516> <The Authenticator provider has preexisting LDAP data.> 
+####<May 3, 2012 10:36:24 AM PDT> <Info> <Security> <abhishek-593786> <myserver> <main> <<WLS Kernel>> <> <BEA-090093> <No pre-WLS 8.1 Keystore providers are configured for server myserver for security realm myrealm.> 
+####<May 3, 2012 10:36:24 AM PDT> <Notice> <Security> <abhishek-593786> <myserver> <main> <<WLS Kernel>> <> <BEA-090082> <Security initializing using security realm myrealm.> 
+####<May 3, 2012 10:36:24 AM PDT> <Notice> <WebLogicServer> <abhishek-593786> <myserver> <main> <<WLS Kernel>> <> <BEA-000327> <Starting WebLogic Admin Server "myserver" for domain "mydomain"> 
+####<May 3, 2012 10:36:24 AM PDT> <Info> <WebLogicServer> <abhishek-593786> <myserver> <main> <<WLS Kernel>> <> <BEA-000214> <WebLogic Server "myserver" version:
+WebLogic Server 8.1 SP4  Mon Nov 29 16:21:29 PST 2004 471647 
+WebLogic XMLX Module 8.1 SP4  Mon Nov 29 16:21:29 PST 2004 471647  (c) 1995, 1996, 1997, 1998 WebLogic, Inc.
+ (c) 1999, 2000, 2001 BEA Systems, Inc.> 
+####<May 3, 2012 10:36:24 AM PDT> <Info> <WebLogicServer> <abhishek-593786> <myserver> <main> <<WLS Kernel>> <> <BEA-000215> <Loaded License : C:\bea\license.bea> 
+####<May 3, 2012 10:36:24 AM PDT> <Info> <RJVM> <abhishek-593786> <myserver> <main> <<WLS Kernel>> <> <BEA-000570> <Network Configuration for Channel "myserver"
+ Listen Address		 *
+ Public Address		 N/A
+ Http Enabled		 true
+ Tunneling Enabled	 false
+ Outbound Enabled	 false
+ Admin Traffic Enabled	 true> 
+####<May 3, 2012 10:36:24 AM PDT> <Debug> <RJVM> <abhishek-593786> <myserver> <main> <<WLS Kernel>> <> <BEA-000571> <Network Configuration Detail for Channel "myserver"
+ Channel Weight		 50
+ Accept Backlog		 50
+ Login Timeout		 5000ms
+ Max Message Size	 10000000
+ Message Timeout	 60s
+ Idle Timeout		 65s
+ Tunneling Timeout	 40s
+ Tunneling Ping		 45s> 
+####<May 3, 2012 10:36:25 AM PDT> <Info> <XML> <abhishek-593786> <myserver> <main> <<WLS Kernel>> <> <BEA-130036> <Initializing XMLRegistry.> 
+####<May 3, 2012 10:36:25 AM PDT> <Info> <JDBC> <abhishek-593786> <myserver> <main> <<WLS Kernel>> <> <BEA-001135> <Initializing the JDBC service.> 
+####<May 3, 2012 10:36:25 AM PDT> <Info> <JDBC> <abhishek-593786> <myserver> <main> <<WLS Kernel>> <> <BEA-001137> <Initialization complete.> 
+####<May 3, 2012 10:36:25 AM PDT> <Info> <Connector> <abhishek-593786> <myserver> <main> <<WLS Kernel>> <> <BEA-190000> <Initializing J2EE Connector Service> 
+####<May 3, 2012 10:36:25 AM PDT> <Info> <Connector> <abhishek-593786> <myserver> <main> <<WLS Kernel>> <> <BEA-190001> <J2EE Connector Service initialized successfully> 
+####<May 3, 2012 10:36:25 AM PDT> <Info> <IIOP> <abhishek-593786> <myserver> <main> <<WLS Kernel>> <> <BEA-002014> <IIOP subsystem enabled.> 
+####<May 3, 2012 10:36:26 AM PDT> <Info> <JMS> <abhishek-593786> <myserver> <main> <<WLS Kernel>> <> <BEA-040090> <Deployed 5 default connection factories.> 
+####<May 3, 2012 10:36:26 AM PDT> <Info> <JMS> <abhishek-593786> <myserver> <main> <<WLS Kernel>> <> <BEA-040305> <JMS service is initialized and in standby mode.> 
+####<May 3, 2012 10:36:26 AM PDT> <Info> <HTTP> <abhishek-593786> <myserver> <main> <<WLS Kernel>> <> <BEA-101128> <Initializing HTTP services.> 
+####<May 3, 2012 10:36:26 AM PDT> <Info> <HTTP> <abhishek-593786> <myserver> <main> <<WLS Kernel>> <> <BEA-101133> <Initializing Web server myserver.> 
+####<May 3, 2012 10:36:26 AM PDT> <Info> <HTTP> <abhishek-593786> <myserver> <main> <<WLS Kernel>> <> <BEA-101052> <[HTTP myserver] Initialized> 
+####<May 3, 2012 10:36:26 AM PDT> <Info> <HTTP> <abhishek-593786> <myserver> <main> <<WLS Kernel>> <> <BEA-101135> <myserver is the default Web server.> 
+####<May 3, 2012 10:36:26 AM PDT> <Info> <J2EE> <abhishek-593786> <myserver> <main> <<WLS Kernel>> <> <BEA-160037> <J2EE service initializing.> 
+####<May 3, 2012 10:36:26 AM PDT> <Info> <Deployer> <abhishek-593786> <myserver> <main> <<WLS Kernel>> <> <BEA-149207> <Initializing.> 
+####<May 3, 2012 10:36:27 AM PDT> <Info> <Deployer> <abhishek-593786> <myserver> <main> <<WLS Kernel>> <> <BEA-149059> <Module console of application console is transitioning from unprepared to prepared on server myserver.> 
+####<May 3, 2012 10:36:28 AM PDT> <Info> <Deployer> <abhishek-593786> <myserver> <main> <<WLS Kernel>> <> <BEA-149060> <Module console of application console successfully transitioned from unprepared to prepared on server myserver.> 
+####<May 3, 2012 10:36:28 AM PDT> <Info> <Deployer> <abhishek-593786> <myserver> <main> <<WLS Kernel>> <> <BEA-149059> <Module uddi of application uddi is transitioning from unprepared to prepared on server myserver.> 
+####<May 3, 2012 10:36:29 AM PDT> <Info> <Deployer> <abhishek-593786> <myserver> <main> <<WLS Kernel>> <> <BEA-149060> <Module uddi of application uddi successfully transitioned from unprepared to prepared on server myserver.> 
+####<May 3, 2012 10:36:29 AM PDT> <Info> <Deployer> <abhishek-593786> <myserver> <main> <<WLS Kernel>> <> <BEA-149059> <Module uddiexplorer of application uddiexplorer is transitioning from unprepared to prepared on server myserver.> 
+####<May 3, 2012 10:36:29 AM PDT> <Info> <Deployer> <abhishek-593786> <myserver> <main> <<WLS Kernel>> <> <BEA-149060> <Module uddiexplorer of application uddiexplorer successfully transitioned from unprepared to prepared on server myserver.> 
+####<May 3, 2012 10:36:29 AM PDT> <Info> <Deployer> <abhishek-593786> <myserver> <main> <<WLS Kernel>> <> <BEA-149059> <Module wl_management_internal1 of application wl_management_internal1 is transitioning from unprepared to prepared on server myserver.> 
+####<May 3, 2012 10:36:29 AM PDT> <Info> <Deployer> <abhishek-593786> <myserver> <main> <<WLS Kernel>> <> <BEA-149060> <Module wl_management_internal1 of application wl_management_internal1 successfully transitioned from unprepared to prepared on server myserver.> 
+####<May 3, 2012 10:36:29 AM PDT> <Info> <Deployer> <abhishek-593786> <myserver> <main> <<WLS Kernel>> <> <BEA-149059> <Module wl_management_internal2 of application wl_management_internal2 is transitioning from unprepared to prepared on server myserver.> 
+####<May 3, 2012 10:36:29 AM PDT> <Info> <Deployer> <abhishek-593786> <myserver> <main> <<WLS Kernel>> <> <BEA-149060> <Module wl_management_internal2 of application wl_management_internal2 successfully transitioned from unprepared to prepared on server myserver.> 
+####<May 3, 2012 10:36:29 AM PDT> <Info> <Deployer> <abhishek-593786> <myserver> <main> <<WLS Kernel>> <> <BEA-149059> <Module console of application console is transitioning from prepared to active on server myserver.> 
+####<May 3, 2012 10:36:29 AM PDT> <Info> <Deployer> <abhishek-593786> <myserver> <main> <<WLS Kernel>> <> <BEA-149060> <Module console of application console successfully transitioned from prepared to active on server myserver.> 
+####<May 3, 2012 10:36:29 AM PDT> <Info> <HTTP> <abhishek-593786> <myserver> <main> <<anonymous>> <> <BEA-101047> <[ServletContext(id=10248705,name=console,context-path=/console)] WebServiceServlet: init> 
+####<May 3, 2012 10:36:29 AM PDT> <Info> <Deployer> <abhishek-593786> <myserver> <main> <<WLS Kernel>> <> <BEA-149059> <Module uddi of application uddi is transitioning from prepared to active on server myserver.> 
+####<May 3, 2012 10:36:29 AM PDT> <Info> <Deployer> <abhishek-593786> <myserver> <main> <<WLS Kernel>> <> <BEA-149060> <Module uddi of application uddi successfully transitioned from prepared to active on server myserver.> 
+####<May 3, 2012 10:36:29 AM PDT> <Info> <HTTP> <abhishek-593786> <myserver> <main> <<anonymous>> <> <BEA-101047> <[ServletContext(id=31619389,name=uddi,context-path=/uddi)] WebServiceServlet: init> 
+####<May 3, 2012 10:36:29 AM PDT> <Info> <Deployer> <abhishek-593786> <myserver> <main> <<WLS Kernel>> <> <BEA-149059> <Module uddiexplorer of application uddiexplorer is transitioning from prepared to active on server myserver.> 
+####<May 3, 2012 10:36:29 AM PDT> <Info> <Deployer> <abhishek-593786> <myserver> <main> <<WLS Kernel>> <> <BEA-149060> <Module uddiexplorer of application uddiexplorer successfully transitioned from prepared to active on server myserver.> 
+####<May 3, 2012 10:36:29 AM PDT> <Info> <HTTP> <abhishek-593786> <myserver> <main> <<anonymous>> <> <BEA-101047> <[ServletContext(id=20804180,name=uddiexplorer,context-path=/uddiexplorer)] WebServiceServlet: init> 
+####<May 3, 2012 10:36:29 AM PDT> <Info> <Deployer> <abhishek-593786> <myserver> <main> <<WLS Kernel>> <> <BEA-149059> <Module wl_management_internal1 of application wl_management_internal1 is transitioning from prepared to active on server myserver.> 
+####<May 3, 2012 10:36:29 AM PDT> <Info> <Deployer> <abhishek-593786> <myserver> <main> <<WLS Kernel>> <> <BEA-149060> <Module wl_management_internal1 of application wl_management_internal1 successfully transitioned from prepared to active on server myserver.> 
+####<May 3, 2012 10:36:29 AM PDT> <Info> <HTTP> <abhishek-593786> <myserver> <main> <<anonymous>> <> <BEA-101047> <[ServletContext(id=20113680,name=wl_management_internal1,context-path=/wl_management_internal1)] WebServiceServlet: init> 
+####<May 3, 2012 10:36:29 AM PDT> <Info> <Deployer> <abhishek-593786> <myserver> <main> <<WLS Kernel>> <> <BEA-149059> <Module wl_management_internal2 of application wl_management_internal2 is transitioning from prepared to active on server myserver.> 
+####<May 3, 2012 10:36:29 AM PDT> <Info> <Deployer> <abhishek-593786> <myserver> <main> <<WLS Kernel>> <> <BEA-149060> <Module wl_management_internal2 of application wl_management_internal2 successfully transitioned from prepared to active on server myserver.> 
+####<May 3, 2012 10:36:29 AM PDT> <Info> <HTTP> <abhishek-593786> <myserver> <main> <<anonymous>> <> <BEA-101047> <[ServletContext(id=16272138,name=wl_management_internal2,context-path=/wl_management_internal2)] WebServiceServlet: init> 
+####<May 3, 2012 10:36:29 AM PDT> <Info> <Deployer> <abhishek-593786> <myserver> <main> <<WLS Kernel>> <> <BEA-149208> <Initialization Complete.> 
+####<May 3, 2012 10:36:29 AM PDT> <Info> <JTA> <abhishek-593786> <myserver> <main> <<WLS Kernel>> <> <BEA-110441> <Opening transaction log with driver version "j1.0" and synchronous write policy "Cache-Flush". For information on synchronous write policies, refer to the weblogic.management.configuration.ServerMBean javadoc or console online help.> 
+####<May 3, 2012 10:36:29 AM PDT> <Info> <JDBC> <abhishek-593786> <myserver> <main> <<WLS Kernel>> <> <BEA-001138> <Resuming the JDBC service.> 
+####<May 3, 2012 10:36:29 AM PDT> <Info> <JDBC> <abhishek-593786> <myserver> <main> <<WLS Kernel>> <> <BEA-001140> <Resume complete.> 
+####<May 3, 2012 10:36:29 AM PDT> <Info> <JMS> <abhishek-593786> <myserver> <main> <<WLS Kernel>> <> <BEA-040108> <User connection factory "DefaultXAConnectionFactory" is started.> 
+####<May 3, 2012 10:36:29 AM PDT> <Info> <JMS> <abhishek-593786> <myserver> <main> <<WLS Kernel>> <> <BEA-040108> <User connection factory "QueueConnectionFactory" is started.> 
+####<May 3, 2012 10:36:29 AM PDT> <Info> <JMS> <abhishek-593786> <myserver> <main> <<WLS Kernel>> <> <BEA-040108> <User connection factory "MessageDrivenBeanConnectionFactory" is started.> 
+####<May 3, 2012 10:36:29 AM PDT> <Info> <JMS> <abhishek-593786> <myserver> <main> <<WLS Kernel>> <> <BEA-040108> <User connection factory "DefaultConnectionFactory" is started.> 
+####<May 3, 2012 10:36:29 AM PDT> <Info> <JMS> <abhishek-593786> <myserver> <main> <<WLS Kernel>> <> <BEA-040108> <User connection factory "TopicConnectionFactory" is started.> 
+####<May 3, 2012 10:36:29 AM PDT> <Info> <JMS> <abhishek-593786> <myserver> <main> <<WLS Kernel>> <> <BEA-040306> <JMS service is active now.> 
+####<May 3, 2012 10:36:29 AM PDT> <Info> <HTTP> <abhishek-593786> <myserver> <main> <<WLS Kernel>> <> <BEA-101129> <Initializing the Web application container.> 
+####<May 3, 2012 10:36:29 AM PDT> <Info> <HTTP> <abhishek-593786> <myserver> <main> <<WLS Kernel>> <> <BEA-101238> <HTTP log rotation is size based for the Web server: myserver.> 
+####<May 3, 2012 10:36:29 AM PDT> <Info> <HTTP> <abhishek-593786> <myserver> <main> <<WLS Kernel>> <> <BEA-101051> <[HTTP myserver] started> 
+####<May 3, 2012 10:36:29 AM PDT> <Info> <WebService> <abhishek-593786> <myserver> <main> <<WLS Kernel>> <> <BEA-220027> <Web Service reliable agents are started on the server.> 
+####<May 3, 2012 10:36:29 AM PDT> <Info> <Deployer> <abhishek-593786> <myserver> <main> <<WLS Kernel>> <> <BEA-149209> <Resuming.> 
+####<May 3, 2012 10:36:30 AM PDT> <Info> <JMS> <abhishek-593786> <myserver> <main> <<WLS Kernel>> <> <BEA-040321> <JMSServer "WSStoreForwardInternalJMSServermyserver" is resuming.> 
+####<May 3, 2012 10:36:30 AM PDT> <Info> <JMS> <abhishek-593786> <myserver> <main> <<WLS Kernel>> <> <BEA-040113> <JMSServer "WSStoreForwardInternalJMSServermyserver", Opening file store "FileStore" in directory "D:\LoveToShop.com Codes sumit\LoveToShop.com\LoveToShop.com_site\WEB-INF\mydomain\.\rmfilestore". Starting scan of 0 files totalling 0 bytes.> 
+####<May 3, 2012 10:36:30 AM PDT> <Info> <JMS> <abhishek-593786> <myserver> <main> <<WLS Kernel>> <> <BEA-040114> <JMSServer "WSStoreForwardInternalJMSServermyserver", Finished scan of file store "FileStore" in directory "D:\LoveToShop.com Codes sumit\LoveToShop.com\LoveToShop.com_site\WEB-INF\mydomain\.\rmfilestore". Found 0 records totalling 0 bytes.> 
+####<May 3, 2012 10:36:30 AM PDT> <Info> <JMS> <abhishek-593786> <myserver> <main> <<WLS Kernel>> <> <BEA-040010> <JMSServer "WSStoreForwardInternalJMSServermyserver" configured no session pools.> 
+####<May 3, 2012 10:36:30 AM PDT> <Info> <JMS> <abhishek-593786> <myserver> <main> <<WLS Kernel>> <> <BEA-040109> <JMSServer "WSStoreForwardInternalJMSServermyserver" is started.> 
+####<May 3, 2012 10:36:30 AM PDT> <Info> <HTTP> <abhishek-593786> <myserver> <main> <<WLS Kernel>> <> <BEA-101133> <Initializing Web server myserver.> 
+####<May 3, 2012 10:36:30 AM PDT> <Info> <Deployer> <abhishek-593786> <myserver> <main> <<WLS Kernel>> <> <BEA-149210> <Resumed.> 
+####<May 3, 2012 10:36:30 AM PDT> <Info> <Management> <abhishek-593786> <myserver> <main> <<WLS Kernel>> <> <BEA-141187> <Java system properties are defined as follows: 
+awt.toolkit = sun.awt.windows.WToolkit
+file.encoding = Cp1252
+file.encoding.pkg = sun.io
+file.separator = \
+java.awt.graphicsenv = sun.awt.Win32GraphicsEnvironment
+java.awt.printerjob = sun.awt.windows.WPrinterJob
+java.class.path = C:\bea\JDK142~1\lib\tools.jar;C:\bea\WEBLOG~1\server\lib\weblogic_sp.jar;C:\bea\WEBLOG~1\server\lib\weblogic.jar;C:\bea\WEBLOG~1\common\eval\pointbase\lib\pbserver44.jar;C:\bea\WEBLOG~1\common\eval\pointbase\lib\pbclient44.jar;C:\bea\JDK142~1\jre\lib\rt.jar;C:\bea\WEBLOG~1\server\lib\webservices.jar;
+java.class.version = 48.0
+java.endorsed.dirs = C:\bea\JDK142~1\jre\lib\endorsed
+java.ext.dirs = C:\bea\JDK142~1\jre\lib\ext
+java.home = C:\bea\JDK142~1\jre
+java.io.tmpdir = C:\DOCUME~1\abhishek\LOCALS~1\Temp\
+java.library.path = C:\bea\JDK142~1\bin;.;C:\WINDOWS\system32;C:\WINDOWS;C:\bea\WEBLOG~1\server\bin;C:\bea\JDK142~1\jre\bin;C:\bea\JDK142~1\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\Program Files\Java\jdk1.6.0_03\bin;C:\bea\WEBLOG~1\server\bin\oci920_8
+java.naming.factory.initial = weblogic.jndi.WLInitialContextFactory
+java.naming.factory.url.pkgs = weblogic.jndi.factories:weblogic.corba.j2ee.naming.url
+java.protocol.handler.pkgs = weblogic.utils|weblogic.utils|weblogic.net
+java.runtime.name = Java(TM) 2 Runtime Environment, Standard Edition
+java.runtime.version = 1.4.2_05-b04
+java.security.policy = C:\bea\WEBLOG~1\server\lib\weblogic.policy
+java.specification.name = Java Platform API Specification
+java.specification.vendor = Sun Microsystems Inc.
+java.specification.version = 1.4
+java.util.prefs.PreferencesFactory = java.util.prefs.WindowsPreferencesFactory
+java.vendor = Sun Microsystems Inc.
+java.vendor.url = http://java.sun.com/
+java.vendor.url.bug = http://java.sun.com/cgi-bin/bugreport.cgi
+java.version = 1.4.2_05
+java.vm.info = mixed mode
+java.vm.name = Java HotSpot(TM) Client VM
+java.vm.specification.name = Java Virtual Machine Specification
+java.vm.specification.vendor = Sun Microsystems Inc.
+java.vm.specification.version = 1.0
+java.vm.vendor = Sun Microsystems Inc.
+java.vm.version = 1.4.2_05-b04
+javax.rmi.CORBA.PortableRemoteObjectClass = weblogic.iiop.PortableRemoteObjectDelegateImpl
+javax.rmi.CORBA.UtilClass = weblogic.iiop.UtilDelegateImpl
+javax.xml.rpc.ServiceFactory = weblogic.webservice.core.rpc.ServiceFactoryImpl
+javax.xml.soap.MessageFactory = weblogic.webservice.core.soap.MessageFactoryImpl
+jmx.implementation.name = JMX RI
+jmx.implementation.vendor = Sun Microsystems
+jmx.implementation.version = 1.0
+jmx.specification.name = Java Management Extensions
+jmx.specification.vendor = Sun Microsystems
+jmx.specification.version = 1.0 Final Release
+org.omg.CORBA.ORBClass = weblogic.corba.orb.ORB
+org.omg.CORBA.ORBSingletonClass = weblogic.corba.orb.ORB
+org.xml.sax.driver = weblogic.apache.xerces.parsers.SAXParser
+org.xml.sax.parser = weblogic.xml.jaxp.RegistryParser
+os.arch = x86
+os.name = Windows XP
+os.version = 5.1
+path.separator = ;
+sun.arch.data.model = 32
+sun.boot.class.path = C:\bea\JDK142~1\jre\lib\rt.jar;C:\bea\JDK142~1\jre\lib\i18n.jar;C:\bea\JDK142~1\jre\lib\sunrsasign.jar;C:\bea\JDK142~1\jre\lib\jsse.jar;C:\bea\JDK142~1\jre\lib\jce.jar;C:\bea\JDK142~1\jre\lib\charsets.jar;C:\bea\JDK142~1\jre\classes
+sun.boot.library.path = C:\bea\JDK142~1\jre\bin
+sun.cpu.endian = little
+sun.cpu.isalist = pentium i486 i386
+sun.io.unicode.encoding = UnicodeLittle
+sun.os.patch.level = Service Pack 2
+user.country = US
+user.dir = D:\LoveToShop.com Codes sumit\LoveToShop.com\LoveToShop.com_site\WEB-INF\mydomain
+user.home = C:\Documents and Settings\abhishek
+user.language = en
+user.name = abhishek
+user.timezone = America/Los_Angeles
+vde.home = .\myserver\ldap
+weblogic.Name = myserver
+weblogic.mbeanLegalClause.ByPass = false
+> 
+####<May 3, 2012 10:36:30 AM PDT> <Info> <Management> <abhishek-593786> <myserver> <main> <<WLS Kernel>> <> <BEA-141052> <The application poller has started for the development server.> 
+####<May 3, 2012 10:36:30 AM PDT> <Info> <Socket> <abhishek-593786> <myserver> <ListenThread.Default> <<WLS Kernel>> <> <BEA-000406> <NTSocketMuxer was built on May 20 2004 21:15:15
+> 
+####<May 3, 2012 10:36:30 AM PDT> <Info> <Socket> <abhishek-593786> <myserver> <ListenThread.Default> <<WLS Kernel>> <> <BEA-000436> <Allocating 3 reader threads.> 
+####<May 3, 2012 10:36:30 AM PDT> <Info> <Socket> <abhishek-593786> <myserver> <ListenThread.Default> <<WLS Kernel>> <> <BEA-000440> <NativeIO Enabled> 
+####<May 3, 2012 10:36:30 AM PDT> <Notice> <WebLogicServer> <abhishek-593786> <myserver> <main> <<WLS Kernel>> <> <BEA-000331> <Started WebLogic Admin Server "myserver" for domain "mydomain" running in Development Mode> 
+####<May 3, 2012 10:36:30 AM PDT> <Notice> <WebLogicServer> <abhishek-593786> <myserver> <ListenThread.Default> <<WLS Kernel>> <> <BEA-000355> <Thread "ListenThread.Default" listening on port 7001, ip address *.*> 
+####<May 3, 2012 10:36:30 AM PDT> <Notice> <WebLogicServer> <abhishek-593786> <myserver> <main> <<WLS Kernel>> <> <BEA-000360> <Server started in RUNNING mode> 
+####<May 3, 2012 10:36:30 AM PDT> <Info> <Management> <abhishek-593786> <myserver> <ExecuteThread: '1' for queue: 'weblogic.admin.RMI'> <<WLS Kernel>> <> <BEA-140009> <Configuration changes for the domain have been saved to the repository.> 
+####<May 3, 2012 10:36:30 AM PDT> <Info> <Configuration Management> <abhishek-593786> <myserver> <ExecuteThread: '1' for queue: 'weblogic.admin.RMI'> <<WLS Kernel>> <> <BEA-150007> <The booted configuration .\config.xml has been backed up at D:\LoveToShop.com Codes sumit\LoveToShop.com\LoveToShop.com_site\WEB-INF\mydomain\.\config.xml.booted.> 
+####<May 3, 2012 10:37:54 AM PDT> <Debug> <HTTP> <abhishek-593786> <myserver> <ExecuteThread: '1' for queue: 'weblogic.socket.Muxer'> <<WLS Kernel>> <> <BEA-101147> <HttpServer(32183198,null default ctx,myserver) Found no context for "/consol". This request does not match the context path for any installed Web applications, and there is no default Web application configured.> 
+####<May 3, 2012 10:37:54 AM PDT> <Debug> <HTTP> <abhishek-593786> <myserver> <ExecuteThread: '1' for queue: 'weblogic.socket.Muxer'> <<WLS Kernel>> <> <BEA-101147> <HttpServer(32183198,null default ctx,myserver) Found no context for "/favicon.ico". This request does not match the context path for any installed Web applications, and there is no default Web application configured.> 
+####<May 3, 2012 10:37:57 AM PDT> <Debug> <HTTP> <abhishek-593786> <myserver> <ExecuteThread: '1' for queue: 'weblogic.socket.Muxer'> <<WLS Kernel>> <> <BEA-101147> <HttpServer(32183198,null default ctx,myserver) Found no context for "/favicon.ico". This request does not match the context path for any installed Web applications, and there is no default Web application configured.> 
+####<May 3, 2012 10:39:24 AM PDT> <Info> <HTTP> <abhishek-593786> <myserver> <ExecuteThread: '1' for queue: 'weblogic.admin.HTTP'> <<anonymous>> <> <BEA-101047> <[ServletContext(id=10248705,name=console,context-path=/console)] FileServlet: init> 
+####<May 3, 2012 10:39:24 AM PDT> <Info> <HTTP> <abhishek-593786> <myserver> <ExecuteThread: '1' for queue: 'weblogic.admin.HTTP'> <<anonymous>> <> <BEA-101047> <[ServletContext(id=10248705,name=console,context-path=/console)] FileServlet: Using standard I/O> 
+####<May 3, 2012 10:41:37 AM PDT> <Notice> <Security> <abhishek-593786> <myserver> <ExecuteThread: '1' for queue: 'weblogic.admin.HTTP'> <<WLS Kernel>> <> <BEA-090078> <User abhishek123 in security realm myrealm has had 5 invalid login attempts, locking account for 30 minutes.> 
